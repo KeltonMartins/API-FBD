@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(
+    title="API Volley",
+    version="1.0"
+)
 
-@app.get("/")
-
-def read_root():
-    return {"Hello": "World"}
